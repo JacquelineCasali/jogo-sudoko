@@ -31,7 +31,7 @@ return NON_STARTED;
         return  spaces.stream().flatMap(Collection::stream).anyMatch(s->nonNull(s.getActual())&&!s.getActual().equals(s.getExpected()));
     }
 
-   public boolean chaneValue(final int col, final int row, final int value ){
+   public boolean changeValue(final int col, final int row, final int value ){
   var space=spaces.get(col).get(row);
   if(space.isFixed()){
       return false;
